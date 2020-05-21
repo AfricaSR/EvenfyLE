@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="root" fx:id="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.LoginController">
+   <bottom>
+      <AnchorPane id="main" fx:id="main" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #66ff66 0%, #66ffcc 100%) no-repeat;" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="login" fx:id="login" alignment="CENTER" layoutX="242.0" layoutY="308.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="45.0" prefWidth="113.0" style="-fx-border-radius: 50px; -fx-background-radius: 50px; -fx-background-color: #343a40;" text="Entrar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font></Button>
+            <TextField id="email" fx:id="email" layoutX="173.0" layoutY="172.0" prefHeight="40.0" prefWidth="250.0" promptText="Email" style="-fx-background-radius: 50px;">
+               <padding>
+                  <Insets left="25.0" />
+               </padding></TextField>
+            <PasswordField id="password" fx:id="password" layoutX="173.0" layoutY="228.0" prefHeight="40.0" prefWidth="250.0" promptText="Constraseña" style="-fx-background-radius: 50px;">
+               <padding>
+                  <Insets left="25.0" />
+               </padding></PasswordField>
+            <Label alignment="CENTER" layoutX="130.0" layoutY="24.0" prefHeight="75.0" prefWidth="250.0" text="Evenfy" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="48.0" />
+               </font></Label>
+            <Label layoutX="142.0" layoutY="132.0" text="Accede con tu email y contraseña del portal web" textFill="#343a40">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="343.0" layoutY="14.0" prefHeight="83.0" prefWidth="91.0" text="LE" textAlignment="CENTER" textFill="#343a40">
+               <font>
+                  <Font name="Arial Black" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

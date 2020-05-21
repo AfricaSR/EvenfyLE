@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="root" fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom right, #66ff66 0%, #66ffcc 100%) no-repeat;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.EventController">
+   <children>
+      <Button id="download" fx:id="download" disable="true" layoutX="175.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#download" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: #343a40; -fx-background-radius: 50px;" text="Descargar" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></Button>
+      <TableView id="eventsTable" fx:id="eventsTable" layoutX="25.0" layoutY="86.0" prefHeight="200.0" prefWidth="550.0" style="-fx-background-radius: 0 0 50px 50px; -fx-alignment: CENTER;">
+        <columns>
+          <TableColumn id="codeEvent" fx:id="codeEvent" editable="false" prefWidth="100.0" text="Código" />
+          <TableColumn id="titleEvent" fx:id="titleEvent" prefWidth="200.0" text="Título" />
+            <TableColumn id="dateEvent" fx:id="dateEvent" prefWidth="150.0" text="Fecha" />
+            <TableColumn id="attendsEvent" fx:id="attendsEvent" prefWidth="100.0" text="Asistentes" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" cacheShape="false" centerShape="false" contentDisplay="CENTER" ellipsisString="" focusTraversable="false" layoutX="25.0" layoutY="6.0" prefHeight="78.0" prefWidth="550.0" scaleShape="false" text="Para descargar la información, selecciona en la tabla un evento y a continuación presiona &quot;Descargar&quot;" textAlignment="CENTER" textFill="#343a40" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
